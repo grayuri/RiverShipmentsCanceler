@@ -1,0 +1,47 @@
+{
+  "manifest_version": 2,
+  "name": "River Shipments Canceler",
+  "version": "2.0",
+  "description": "An Amazon River extension, which fetches all the Not Permited Products and checks the Canceled Shipments.",
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.mozilla.org/*"],
+      "js": ["rodeoScript.js"]
+    },
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["pandashScript.js"]
+    },
+    {
+      "matches": ["*://*.tabnews.com.br/*"],
+      "js": ["riverScript.js"]
+    }
+  ],
+
+  "permissions": [
+    "webNavigation",
+    "storage"
+  ],
+
+  "web_accessible_resources": [
+    "./utils.js"
+  ],
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "rivershipmentscanceler@rsc.com",
+      "strict_min_version": "88.0"
+    }
+  },
+
+  "browser_action": {
+    "default_icon": "./assets/logo.png",
+    "default_title": "River Shipments Canceler",
+    "default_popup": "./popup.html"
+  }
+}

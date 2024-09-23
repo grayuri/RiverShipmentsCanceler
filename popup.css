@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+p, span, div {
+  font-size: 18px;
+  color: #5394C5;
+}
+
+body {
+  max-width: 420px;
+}
+
+#popup {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 12px;
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3979AA;
+    border-radius: 12px;
+    gap: 12px;
+    padding: 12px;
+    
+    h1 {
+      color: white;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    h1 {
+      color: #3979AA;
+    }
+
+    .results {
+      .shipments-status {
+        margin-top: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        .status {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+      }
+    }
+
+    .line {
+      width: 100%;
+      height: 1px;
+      background-color: #5394C5;
+    }
+
+  }
+
+  .clean-button {
+    padding: 12px;
+    text-align: center;
+    color: white;
+    background-color: #FF9900;
+    border-radius: 12px;
+    cursor: pointer;
+    flex: 1;
+    transition: 0.24s ease;
+  }
+
+  .clean-button:hover {
+    background-color: #ffaa1c
+  }
+}

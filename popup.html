@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./popup.css"/>
+  </head>
+  <body>
+    <main id="popup">
+      <header>
+        <div class="image-container">
+          <img src="./assets/logo.png" alt="">
+        </div>
+        <h1>River Shipments Canceler</h1>
+      </header>
+
+      <div class="content">
+        <h1>Shipments Registered</h1>
+
+        <div class="results">
+          <p class="results-quantity">0 results</p>
+          <div class="shipments-status">
+            <div class="status">
+              <div class="icon">
+                <img src="./assets/pending-icon.png" alt="">
+              </div>
+              <span>
+                Pending (<span class="value">0</span>)
+              </span>
+            </div>
+            <div class="status">
+              <div class="icon">
+                <img src="./assets/permited-icon.png" alt="">
+              </div>
+              <span>
+                Permited (<span class="value">0</span>)
+              </span>
+            </div>
+            <div class="status">
+              <div class="icon">
+                <img src="./assets/not-permited-icon.png" alt="">
+              </div>
+              <span>
+                Not Permited (<span class="value">0</span>)
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="line"></div>
+
+        <p class="message">
+          You don't registered any shipment yet. Please, visit the Rodeo Scanned Work Pool to register all the shipments.
+        </p>
+      </div>
+
+      <div class="clean-button">
+        Clean All
+      </div>
+    </main> 
+    <script src="./popup.js"></script>
+  </body>
+</html>
